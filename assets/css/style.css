@@ -37,8 +37,12 @@ body{
 
 .divMenu img{
     width: 15px;
-    margin-top: 22px;
     opacity: 0.6;
+}
+
+.divMenu:hover img, .divMenu:hover a{
+    opacity: 1;
+   color: white;
 }
 
 .divMenu .menu{
@@ -56,6 +60,13 @@ body{
     font-size: 18px;
     font-weight: normal;
     font-family: quicksand;
+}
+
+.divMenu .divA{
+    color: #ebe7e7;
+    padding: 5px 0px;
+    margin: 0px;
+    margin-top: 9px;
 }
 
 .header .bold{
@@ -134,6 +145,10 @@ body{
     font-family: quicksand;
     text-decoration: none;
     line-height: 30px;
+}
+
+.hoverWhite:hover{
+    color: white;
 }
 
 /*content*/
@@ -342,7 +357,6 @@ li img{
     vertical-align: middle;
 }
 
-
 .const.link{
     display: block;
 }
@@ -370,4 +384,8 @@ li img{
 .xazi{
     border-top: 1px solid;
     border-color: #616060;
+}
+
+.contakt li a:hover, .link a:hover {
+    color: rgb(180, 69, 69);
 }
