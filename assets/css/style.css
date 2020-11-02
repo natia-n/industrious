@@ -16,9 +16,7 @@
 }
 
 body{
-    background-color: #f3f3f3;
-    /* background-image: url(../images/bg.jpg);
-    opacity: 0.1;   */
+    background-image: url(../images/bg-2.png); 
 }
 
 /*header*/
@@ -79,9 +77,10 @@ body{
  .baner1, .baner2 {
     text-align: center;
     position: relative;
-    background-color: #ce1b28;
     width: 100%;
     font-size: 0px;
+    overflow: hidden;
+    height: 660px;
 }
 
 .baner1>div{
@@ -94,20 +93,13 @@ body{
 
 .baner2>div {
     color: honeydew;
-    position: absolute;
     width: 80%;
-    margin-left: 10%;
-    top: 30%;
+    margin: 0 auto;
+    transform: translateY(-50%);
 }
 
-.baner1 img{
-    width: 100%;
-    opacity: 0.6;     
-}
-
-.baner2 img{
-    width: 100%;
-    opacity: 0.8;     
+.baner1 video{
+    width: 100%;    
 }
 
 .baner1 h1{
@@ -118,6 +110,14 @@ body{
 
 .baner2{
     margin-top: 110px;
+    background-image: url(../images/cta01.jpg);
+    background-size: cover; /*ფოტო პროპორციები რომ არ დაირღვეს და მთელს დივში რომ ჩაჯდეს*/
+    background-repeat: no-repeat; /*თუ დივი დიდია, კიდო რომ არ გაიმეოროს ფოტო*/
+    background-position-y: center; /* y ღერძის მიმართ გასწორდეს ცენტრში*/
+    height: 500px;
+    background-attachment: fixed; /*ბეგრაუნდის ფოტო რომ დაფიქსირდეს და დივის მოძრაობის დროს ეტაპობრივად გამოჩნდეს*/
+    padding-top: 250px;
+    box-sizing: border-box; /*ბორდერის ზომაში შევიდეს ყველაფერი*/
 }
 
 .baner2 h1{
@@ -201,8 +201,7 @@ body{
     height: 390px;
 }
 
-.sia1 img{
-    width: 80px;    
+.sia1 img{  
     height: 80px;
     margin-top: 10px;  
     padding: 10px;  
@@ -245,12 +244,12 @@ body{
     padding: 20px;
     font-weight: normal;
     font-family: quicksand;
+    font-style: italic;
 }
 
 .sia1 .person{
     padding: 12px;
     border-radius: 50px;
-    width: 60px;
     height: 60px;
     margin-left: 50px;
 }
@@ -354,6 +353,7 @@ li img{
     border-radius: 5px;
     padding: 0px 15px;
     vertical-align: middle;
+    background-size: cover;
 }
 
 .const.link{
@@ -362,7 +362,6 @@ li img{
 
 .link{
     width: 1290px;
-    /* border-top: groove; */
     padding: 25px 0px;
     margin: 17px 47.5px;
     border-top: 1px solid;
@@ -385,6 +384,10 @@ li img{
     border-color: #616060;
 }
 
-.contakt li a:hover, .link a:hover {
+.contakt li a:hover {
+    color: rgb(180, 69, 69);
+}
+
+.linkp, a:hover {
     color: rgb(180, 69, 69);
 }
