@@ -40,7 +40,11 @@ body{
 
 .divMenu:hover img, .divMenu:hover a{
     opacity: 1;
-   color: white;
+    color: white;
+}
+
+.header a:hover{
+    color: white;
 }
 
 .divMenu .menu{
@@ -52,7 +56,6 @@ body{
 .header a{
     display: inline-block;
     color: #ebe7e7;
-    padding-right: 10px;
     margin: 8px 20px;
     text-decoration: none;
     font-size: 18px;
@@ -74,13 +77,15 @@ body{
 
  /*baner1*/
 
- .baner1, .baner2 {
+ .baner1 {
     text-align: center;
     position: relative;
     width: 100%;
     font-size: 0px;
     overflow: hidden;
     height: 660px;
+    background: linear-gradient(135deg, #ce1b28 0%, #111111 74%); /*იწყება წითელი 0%-დან და 74%-დან იწყება შავი, დახრილობა 135 გრადუსი*/
+
 }
 
 .baner1>div{
@@ -100,6 +105,7 @@ body{
 
 .baner1 video{
     width: 100%;    
+    opacity: 0.2;
 }
 
 .baner1 h1{
@@ -109,6 +115,8 @@ body{
 }
 
 .baner2{
+    text-align: center;
+    width: 100%;
     margin-top: 110px;
     background-image: url(../images/cta01.jpg);
     background-size: cover; /*ფოტო პროპორციები რომ არ დაირღვეს და მთელს დივში რომ ჩაჯდეს*/
@@ -351,9 +359,9 @@ li img{
     width: 35px;
     height: 35px;
     border-radius: 5px;
-    padding: 0px 15px;
     vertical-align: middle;
     background-size: cover;
+    margin: 0px 15px;
 }
 
 .const.link{
@@ -385,6 +393,10 @@ li img{
 }
 
 .contakt li a:hover {
+    color: rgb(180, 69, 69);
+}
+
+.contakt li img:hover li a  {
     color: rgb(180, 69, 69);
 }
 
