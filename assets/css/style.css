@@ -44,7 +44,7 @@ body{
 }
 
 .header a:hover{
-    color: white;
+    color: #ebe7e7;
 }
 
 .divMenu .menu{
@@ -85,7 +85,6 @@ body{
     overflow: hidden;
     height: 660px;
     background: linear-gradient(135deg, #ce1b28 0%, #111111 74%); /*იწყება წითელი 0%-დან და 74%-დან იწყება შავი, დახრილობა 135 გრადუსი*/
-
 }
 
 .baner1>div{
@@ -346,7 +345,6 @@ body{
 
 li{
     list-style-type: none;
-    line-height: 25px;
 }
 
 li a{
@@ -396,10 +394,35 @@ li img{
     color: rgb(180, 69, 69);
 }
 
-.contakt li img:hover li a  {
+.contakt li img:hover  {
     color: rgb(180, 69, 69);
 }
 
 .linkp, a:hover {
     color: rgb(180, 69, 69);
+}
+
+/* MenuSia*/
+
+.menuSia{
+    width: 340px;
+    position: fixed;
+    background-color:#111111;
+    z-index: 2; 
+    height: 100%;
+    right: 0;
+    top: 55px;
+    display: none;
+}
+
+.menuSia ul{
+    padding: 10px;
+    text-align: left;
+    color: rgb(228, 230, 229);
+    border-top: 1px solid;
+    border-color: #616060;
+}
+
+.show {
+    display: block; /*თუ არის .show კლასი, დისპლეი ჩანს. ეს კლასი შექმნილია მხოლოდ css-ში*/
 }
