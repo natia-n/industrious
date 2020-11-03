@@ -38,6 +38,10 @@ body{
     opacity: 0.6;
 }
 
+.divMenu a{
+    padding: 5px 0px;
+}
+
 .divMenu:hover img, .divMenu:hover a{
     opacity: 1;
     color: white;
@@ -117,7 +121,7 @@ body{
     text-align: center;
     width: 100%;
     margin-top: 110px;
-    background-image: url(../images/cta01.jpg);
+    background-image: linear-gradient(rgba(206, 27, 40, 0.25), rgba(206, 27, 40, 0.25)), url(../images/cta01.jpg);
     background-size: cover; /*ფოტო პროპორციები რომ არ დაირღვეს და მთელს დივში რომ ჩაჯდეს*/
     background-repeat: no-repeat; /*თუ დივი დიდია, კიდო რომ არ გაიმეოროს ფოტო*/
     background-position-y: center; /* y ღერძის მიმართ გასწორდეს ცენტრში*/
@@ -337,7 +341,6 @@ body{
 .contakt div p, a {
     color: #9c9b9b;
     font-size: 17px;
-    padding: 5px 0px;
     font-weight: normal;
     font-family: quicksand;
     line-height: 29px;
@@ -394,7 +397,7 @@ li img{
     color: rgb(180, 69, 69);
 }
 
-.contakt li img:hover  {
+.div3 li a:first-child:hover + a { /*div3-ში li-ის პირველ a-ს hover-ის დროს მოინიშნოს მისი შემდეგი მეზობელი a*/
     color: rgb(180, 69, 69);
 }
 
@@ -410,19 +413,18 @@ li img{
     background-color:#111111;
     z-index: 2; 
     height: 100%;
-    right: 0;
+    right: -340px; /*რომ დაიმალოს მარჯვნიბ ბადის გარეთ*/
     top: 55px;
-    display: none;
+    transition: right 0.5s ease-out; /* 5 წამში -გამოჩნდეს მის ადგილას. (right: -340px-გახდება 0px) */
 }
 
 .menuSia ul{
     padding: 10px;
     text-align: left;
     color: rgb(228, 230, 229);
-    border-top: 1px solid;
     border-color: #616060;
 }
 
 .show {
-    display: block; /*თუ არის .show კლასი, დისპლეი ჩანს. ეს კლასი შექმნილია მხოლოდ css-ში*/
+    right: 0; /*თუ არის show კლასი, right გახდეს 0px. რაც გამოიწვევს დამალული დივის გამოჩენას. ეს კლასი შექმნილია მხოლოდ css-ში*/
 }
